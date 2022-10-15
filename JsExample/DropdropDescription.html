@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+<body>
+    <center>
+        <from name="form1">
+    <h2>Select The Options From Dropdown</h2>
+    <select onchange="PrintInfo(this.value)" >
+        <option >NewDelhi</option>
+        <option >Mumbai</option>
+        <option >Banglore</option>
+    </select>
+    <br>
+    <br>
+    <table>
+        <tr>
+          <th>Desciption</th>
+          <th>image</th>
+        </tr>
+        <tr>
+          <td> <label id="des">New Delhi is best known as the location of India's national government. New Delhi has great historical significance as it was home to powerful people, such as the Pāṇḍavas and the Mughals. The city has many historical monuments and tourist attractions as well as lively marketplaces and great food, such as chaat.</label></td><br>
+          <td><img src="d.jfif" id="img"/></td>
+
+        </tr>
+      </table>
+      
+</from>
+</center>
+</body>
+<script>
+    function PrintInfo(info){
+       
+        if(info == "Mumbai"){
+            document.getElementById('des').innerHTML = "Mumbai (formerly called Bombay) is a densely populated city on India’s west coast. A financial center, it's India's largest city. On the Mumbai Harbour waterfront stands the iconic Gateway of India stone arch, built by the British Raj in 1924. Offshore, nearby Elephanta Island holds ancient cave temples dedicated to the Hindu god Shiva. The city's also famous as the heart of the Bollywood film industry. "
+            document.getElementById('img').src = "m.jfif"
+        }
+        else if(info == "NewDelhi"){
+            document.getElementById('des').innerHTML = "New Delhi is best known as the location of India's national government. New Delhi has great historical significance as it was home to powerful people, such as the Pāṇḍavas and the Mughals. The city has many historical monuments and tourist attractions as well as lively marketplaces and great food, such as chaat."
+            document.getElementById('img').src = "d.jfif"
+        }
+        else{
+            document.getElementById('des').innerHTML = "Bengaluru (also called Bangalore) is the capital of India's southern Karnataka state. The center of India's high-tech industry, the city is also known for its parks and nightlife. By Cubbon Park, Vidhana Soudha is a Neo-Dravidian legislative building. Former royal residences include 19th-century Bangalore Palace, modeled after England’s Windsor Castle, and Tipu Sultan’s Summer Palace, an 18th-century teak structure."
+            document.getElementById('img').src = "b.jfif"
+        }
+    }
+    
+    
+</script>
+</html>

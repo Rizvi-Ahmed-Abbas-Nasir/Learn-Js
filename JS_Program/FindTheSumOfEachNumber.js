@@ -7,10 +7,10 @@ function Check(){
 
 function SumOfSqure(N){
     sum = 0;
-    d = N*N
-   while(d > 0){
-    sum = sum+d % 10;
-    d = Math.floor(d / 10);
+   while(N > 0){
+    d = N % 10;
+    sum = sum+(d*d);
+    N = Math.floor(N / 10);
    }
    return sum
 }

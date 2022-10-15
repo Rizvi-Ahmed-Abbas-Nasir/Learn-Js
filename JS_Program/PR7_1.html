@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizvi Ahemd Abbas</title>
+</head>
+<body>
+    <center>
+        <form name="Calculate">
+            <h2>Name: Rizvi Ahmed Abbas</h2>
+            <h3>Enroll No: 2005690171 </h3>
+
+            <label>Total Fees</label>
+            <input type="text" id="tf" value="50000" >
+            <br>
+            <label>Paid Fees</label>
+            <input type="text" id="pf" onchange="Paid(this.value)">
+            <br>
+            <label>Remaning Fees</label>
+            <input type="text" id="rf">
+
+
+        </form>
+
+
+    </center>
+
+</body>
+<script>
+
+    function Paid(PF){    
+        
+        TF = document.forms.Calculate.tf.value
+        document.forms.Calculate.rf.value = TF - PF
+
+
+    }
+    
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <center>
+        <form name="Contact" action="FindVowels.html" method="get">
+            <br>
+            <br>
+            <h2>Student mail</h2>
+            <label>Name </label><input type="text" name="n" >
+            <br>
+            <br>
+            <label>Middle name </label><input type="text" name="m" >
+            <br>
+            <br>
+            <label>Surname </label><input type="text" name="s">
+            <br>
+            <br>
+            <input type="hidden" name="e" id="e">
+            
+            <input type="submit" value="Submit" onsubmit="OnSub()" > 
+
+        </form>
+    </center>
+    
+</body>
+<script>
+    function OnSub(){
+        with(document.forms.Contact){
+            if(n.value.length > 0 && m.value.length > 0){
+              var email = e.value = n.value + m.value.charAt(0)+"@msbte.com"
+              alert(email)
+            }
+            else{
+                alert("Enter The Name, Middle Name, and Surname Properly")
+            }
+        }
+
+    }
+
+
+</script>
+</html>

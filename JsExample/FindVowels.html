@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h2>Find Vowel Or Not</h2>
+    <input type="text" id="v1">
+    <input type="button" onclick="FindVowels()" value="Check">
+</body>
+<script>
+function FindVowels(){
+    var v = document.getElementById('v1').value
+
+    switch (v) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U':
+           alert("It's Vowel");
+            break;
+        default:
+            alert("It's not a Vowel");
+    }
+
+}
+
+</script>
+</html>

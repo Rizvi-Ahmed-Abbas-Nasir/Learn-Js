@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rizvi Ahmed Abbas</title>
+  </head>
+  <body>
+    <center>
+      <form>
+        <h2>Name: Rizvi Ahmed Abbas</h2>
+        <h3>Enroll No: 2005690171 </h3>
+        <h2>Student Attandence</h2>
+        <input type="checkbox" name="A">Rizvi
+        <br>
+        <br>
+        <input type="checkbox" name="B">Abbas
+        <br>
+        <br>
+        <input type="checkbox" name="C">Ahmed
+        <br>
+        <br>
+        <input type="checkbox" name="D">Nasir
+        <br>
+        <br>
+        <input type="checkbox" name="E">Hussain
+        <br>
+        <br>
+        <button onclick="Student(A,B,C,D,E)">Check The Attandence</button>
+ 
+      </form>
+    </center>
+  </body>
+  <script>
+
+    function Student(a,b,c,d,e){
+
+        msg = "";
+        if(a.checked == true){
+            msg = msg.concat(" Rizvi is Present,")
+        }
+        else{
+            msg = msg.concat(" Rizvi is Absent,")
+        }
+        if(b.checked == true){
+            msg = msg.concat(" Abbas is Present,")
+        }
+        else{
+            msg = msg.concat(" Abbas is Absent,")
+        }
+        if(c.checked == true){
+            msg = msg.concat(" Ahmed is Present,")
+        }
+        else{
+            msg = msg.concat(" Ahmed is Absent,")
+        }
+        if(d.checked == true){
+            msg = msg.concat(" Nasir is Present,")
+        }
+        else{
+            msg = msg.concat(" Nasir is Absent,")
+        }
+        if(e.checked == true){
+            msg = msg.concat(" Hussain is Present,")
+
+        }
+        else{
+            msg = msg.concat(" Hussain is Present,")
+        }
+      
+        alert(msg )
+    }
+
+  </script>
+</html>

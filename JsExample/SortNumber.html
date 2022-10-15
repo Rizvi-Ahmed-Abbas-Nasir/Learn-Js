@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>JavaScript conditional statement to sort three numbers</title>
+  </head>
+  <body>
+    <h2>
+      Write a JavaScript conditional statement to sort three numbers. Display an
+      alert box to show the result.
+    </h2>
+    <input type="text" id="in1" />
+    <input type="text" id="in2" />
+    <input type="text" id="in3" />
+    <input type="button" value="Check" onclick="Print()" />
+  </body>
+  <script>
+    function Print() {
+      var a = document.getElementById("in1").value;
+      var b = document.getElementById("in2").value;
+      var c = document.getElementById("in3").value;
+      x = parseInt(a);
+      y = parseInt(b);
+      z = parseInt(c);
+
+      if (x > y && x > z) {
+        if (y > z) {
+          alert("Sort In Decending "+x + ", " + y + ", " + z);
+        } else {
+            alert("Sort In Decending "+x + ", " + z + ", " + y);
+        }
+      } else if (y > x && y > z) {
+        if (x > z) {
+            alert("Sort In Decending "+y + ", " + x + ", " + z);
+        } else {
+            alert("Sort In Decending "+y + ", " + z + ", " + x);
+        }
+      } else if (z > x && z > y) {
+        if (x > y) {
+            alert("Sort In Decending "+z + ", " + x + ", " + y);
+        } else {
+          alert("Sort In Decending "+z + ", " + y + ", " + x);
+        }
+      }
+    }
+  </script>
+</html>

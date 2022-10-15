@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rizvi Ahmed Abbas</title>
+  </head>
+  <body>
+    <center>
+        <br>
+
+        <br>
+        <h2>Name: Rizvi Ahmed Abbas Nasir Hussain</h2>
+        <h3>Enroll: 2005690171</h3>
+      <form name="Selection" border="10px soild black">
+        <select id="stud">
+            <option>.....</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="checkbox" id="rizvi" name="rizvi" value="Rizvi" onclick="add(this,abbas)">Rizvi
+        <input type="checkbox" id="abbas" name="abbas" value="Abbas" onclick="add(rizvi,this)">Abbas
+
+      </form>
+    </center>
+  </body>
+  <script>
+
+    function add(a,b){
+        with(document.forms.Selection){
+            op1 = document.createElement('option');
+            op2 = document.createElement('option');
+            op3 = document.createElement('option');
+            op4 = document.createElement('option');
+
+            if(a.checked == true && b.checked == true){
+            op1.value = a.value;
+            op1.text = a.value;
+            op2.value = b.value;
+            op2.text = b.value;
+            stud.appendChild(op1);
+            stud.appendChild(op2);
+            }
+            else if(a.checked == true){
+                op3.value = a.value;
+                op3.text = a.value;
+                stud.appendChild(op3);
+                stud.remove(stud.op1);
+                stud.remove(stud.op2);
+                stud.remove(op4);
+            }
+            else if(b.checked == true){
+                
+                op4.value = b.value;
+                op4.text = b.value;
+                stud.appendChild(op4);
+                stud.remove(op3);
+                stud.remove(stud.op1);
+                stud.remove(stud.op2);
+            }
+            else{
+              stud.remove(op1);
+              stud.remove(op2);
+              stud.remove(op3);
+              stud.remove(op4);
+
+            }
+        }
+    }
+
+  </script>
+</html>

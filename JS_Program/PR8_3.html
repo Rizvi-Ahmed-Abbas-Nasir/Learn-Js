@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rizvi Ahmed Abbas</title>
+  </head>
+  <body>
+    <center>
+      <br />
+      <form name="Selection">
+        <h2>Name: Rizvi Ahmed Abbas Nasir Hussain</h2>
+        <h3>Enroll: 2005690171</h3>
+        <input
+          type="button"
+          name="btn"
+          value="Check"
+          onclick="chk_unchk(this)"
+        />
+        <br />
+        <br />
+        <input type="checkbox" name="chk1" />
+        <input type="checkbox" name="chk2" />
+        <input type="checkbox" name="chk3" />
+      </form>
+    </center>
+  </body>
+  <script>
+    function chk_unchk(c) {
+      with (document.forms.Selection) {
+        if(c.value == "Check"){
+            btn.value = "Uncheck";
+            chk1.checked = true
+            chk2.checked = true
+            chk3.checked = true
+        }
+        else{
+            c.value = "Check"
+            chk1.checked = false
+            chk2.checked = false
+            chk3.checked = false
+        }
+      }
+    }
+  </script>
+</html>

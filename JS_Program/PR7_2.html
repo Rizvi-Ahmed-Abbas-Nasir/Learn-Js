@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizvi Ahemd Abbbas</title>
+</head>
+<body>
+    <center>
+        <form name="S_Marks">
+            <h2>Name: Rizvi Ahmed Abbas</h2>
+            <h3>Enroll No: 2005690171 </h3>
+            <select name="e_number" id="e_number" onchange="Disp(this.value)">
+                <option value="e321">321</option>
+                <option value="e322">322</option>
+                <option value="e323">323</option>
+            </select>
+            <br>
+            <label>PPT1</label>
+            <input type="text" id="p1">
+            <br>
+            <label>PPT2</label>
+            <input type="text" id="p2">
+            <br>
+            <label>Board Thoery</label>
+            <input type="text" id="bt">
+
+
+        </form>
+
+
+    </center>
+
+</body>
+<script>
+
+    function Disp(en){
+
+        data = {
+            e321:[18,17,56],
+            e322:[19,18,66],
+            e323:[19,18,40]
+        }
+
+        if(en == 'e321'){
+            document.forms.S_Marks.p1.value = data.e321[0]
+            document.forms.S_Marks.p2.value = data.e321[1]
+            document.forms.S_Marks.bt.value = data.e321[2]
+        }
+        else if(en == 'e322'){
+            document.forms.S_Marks.p1.value = data.e322[0]
+            document.forms.S_Marks.p2.value = data.e322[1]
+            document.forms.S_Marks.bt.value = data.e322[2]
+
+        }
+        else{
+            document.forms.S_Marks.p1.value = data.e323[0]
+            document.forms.S_Marks.p2.value = data.e323[1]
+            document.forms.S_Marks.bt.value = data.e323[2]
+
+
+        }
+    }
+
+</script>
+</html>
