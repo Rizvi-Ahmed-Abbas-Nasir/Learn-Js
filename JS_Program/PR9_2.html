@@ -1,0 +1,180 @@
+
+<html lang="en">
+<title>PR 09</title>
+<script src="./pr09ex02.js"></script>
+</head>
+<body>
+<center>
+<h2>Gulam Nabi</h2>
+<h3>2005690172</h3>
+<Label>Team Member</Label><br>
+<form name="team" action="./pr09ex021.html">
+<input type="radio" checked="true" value="Delhi" name="ch" id="ch1"
+onclick="f2(this.value)">Delhi
+<input type="radio" name="ch" id="ch1" value='Mumbai'
+onclick="f2(this.value)">Mumbai<br>
+<input type="checkbox" value="Delhi1" name="M1"><input type="text" value="Delhi1" id="m1"
+disabled><br>
+<input type="checkbox" value="Delhi2" name="M2"><input type="text" value="Delhi2" id="m2"
+disabled><br>
+<input type="checkbox" value="Delhi3" name="M3"><input type="text" value="Delhi3" id="m3"
+disabled><br>
+<input type="checkbox" value="Delhi4" name="M4"><input type="text" value="Delhi4" id="m4"
+disabled><br>
+<input type="checkbox" value="Delhi5" name="M5"><input type="text" value="Delhi5" id="m5"
+disabled><br>
+<input type="checkbox" value="Delhi6" name="M6"><input type="text" value="Delhi6" id="m6"
+disabled><br>
+<input type="checkbox" value="Delhi7" name="M7"><input type="text" value="Delhi7" id="m7"
+disabled><br>
+<input type="checkbox" value="Delhi8" name="M8"><input type="text" value="Delhi8" id="m8"
+disabled><br>
+<input type="checkbox" value="Delhi9" name="M9"><input type="text" value="Delhi9" id="m9"
+disabled><br>
+<input type="checkbox" value="Delhi10" name="M10"><input type="text" value="Delhi10"
+id="m10" disabled><br>
+<input type="checkbox" value="Delhi11" name="M11"><input type="text" value="Delhi11"
+id="m11" disabled><br>
+<input type="checkbox" value="Delhi12" name="M12"><input type="text" value="Delhi12"
+id="m12" disabled><br>
+<input type="checkbox" value="Delhi13" name="M13"><input type="text" value="Delhi13"
+id="m13" disabled><br>
+<input type="checkbox" value="Delhi14" name="M14"><input type="text" value="Delhi14"
+id="m14" disabled><br>
+<input type="checkbox" value="Delhi15" name="M15"><input type="text" value="Delhi15"
+id="m15" disabled><br>
+<img src="submit.png" onclick="f1()" width="200px">
+</form>
+</center>
+</body>
+<script>
+function f2(v){
+with(document.forms.team){
+if(v == "Delhi"){
+ch.checked = false
+M1.value = 'Delhi1'
+m1.value = 'Delhi1'
+M2.value = 'Delhi2'
+m2.value = 'Delhi2'
+M3.value = 'Delhi3'
+m3.value = 'Delhi3'
+M4.value = 'Delhi4'
+m4.value = 'Delhi4'
+M5.value = 'Delhi5'
+m5.value = 'Delhi5'
+M6.value = 'Delhi6'
+m6.value = 'Delhi6'
+M7.value = 'Delhi7'
+m7.value = 'Delhi7'
+M8.value = 'Delhi8'
+m8.value = 'Delhi8'
+M9.value = 'Delhi9'
+m9.value = 'Delhi9'
+M10.value = 'Delhi10'
+m10.value = 'Delhi10'
+M11.value = 'Delhi11'
+m11.value = 'Delhi11'
+M12.value = 'Delhi12'
+m12.value = 'Delhi12'
+M13.value = 'Delhi13'
+m13.value = 'Delhi13'
+M14.value = 'Delhi14'
+m14.value = 'Delhi14'
+M15.value = 'Delhi15'
+m15.value = 'Delhi15'
+}
+else{
+ch.checked = false
+M1.value = 'Mumbai1'
+m1.value = 'Mumbai1'
+M2.value = 'Mumbai2'
+m2.value = 'Mumbai2'
+M3.value = 'Mumbai3'
+m3.value = 'Mumbai3'
+M4.value = 'Mumbai4'
+m4.value = 'Mumbai4'
+M5.value = 'Mumbai5'
+m5.value = 'Mumbai5'
+M6.value = 'Mumbai6'
+m6.value = 'Mumbai6'
+M7.value = 'Mumbai7'
+m7.value = 'Mumbai7'
+M8.value = 'Mumbai8'
+m8.value = 'Mumbai8'
+M9.value = 'Mumbai9'
+m9.value = 'Mumbai9'
+M10.value = 'Mumbai10'
+m10.value = 'Mumbai10'
+M11.value = 'Mumbai11'
+m11.value = 'Mumbai11'
+M12.value = 'Mumbai12'
+m12.value = 'Mumbai12'
+M13.value = 'Mumbai13'
+m13.value = 'Mumbai13'
+M14.value = 'Mumbai14'
+m14.value = 'Mumbai14'
+M15.value = 'Mumbai15'
+m15.value = 'Mumbai15'
+}
+}
+}
+function f1(){
+msg = "";
+with(document.forms.team){
+if(M1.checked == true){
+msg = msg +m1.value+"\n"
+}
+if(M2.checked == true){
+msg = msg + m2.value+"\n"
+}
+if(M3.checked == true){
+msg = msg + m3.value+"\n"
+}
+if(M4.checked == true){
+msg = msg + m4.value+"\n"
+}
+if(M5.checked == true){
+msg = msg + m5.value+"\n"
+}
+if(M6.checked == true){
+msg = msg + m6.value+"\n"
+}
+if(M7.checked == true){
+msg = msg + m7.value+"\n"
+}
+if(M8.checked == true){
+msg = msg + m8.value+"\n"
+}
+if(M9.checked == true){
+msg = msg + m9.value+"\n"
+}
+if(M10.checked == true){
+msg = msg + m10.value+"\n"
+}
+if(M11.checked == true){
+msg = msg + m11.value+"\n"
+}
+if(M12.checked == true){
+msg = msg + m12.value+"\n"
+}
+if(M13.checked == true){
+msg = msg + m13.value+"\n"
+}
+if(M14.checked == true){
+msg = msg + m14.value+"\n"
+}
+if(M15.checked == true){
+msg = msg + m15.value+"\n"
+}
+if(ch.value == "Mumbai"){
+alert("Mumabi Team\n"+msg)
+}else{
+alert("Delhi Team\n"+msg)
+}
+}
+document.forms.team.submit()
+}
+</script>
+</html>
+
+
