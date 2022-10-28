@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizvi Ahmed Abbas</title>
+</head>
+<body>
+    <center>
+        <h2>Rizvi Ahmed Abbas</h2>
+        <h3>2005690171</h3>
+        <input type="text" id="inp" onchange="createCookies()">
+    </center>
+    
+</body>
+<script>
+    function createCookies(){
+        var getc = document.getElementById('inp').value 
+        
+        let cookie = document.cookie = "Name="+ getc + ";"
+        alert(cookie);
+
+        c = cookie.split("=")
+        alert(c[0])
+        alert(c[1])
+    }
+
+</script>
+ 
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progrm</title>
+</head>
+<body>
+
+    <center>
+    <form name="from1">
+
+        <h2>As per Radio Got Click the value should be change</h2>
+        <br>
+        <input type="radio" id="F" name="g1" value="Furite" onclick="SetV(this.value)" checked="true">Furite
+        <input type="radio" id="V" name="g1" value="Vegatable" onclick="SetV(this.value)">Vegatable
+        <br>
+        <br>
+        <select name="opL" id="opL" size="1">
+            <option value="Mango">Mango</option>
+            <option value="Banana">Banana</option>
+            <option value="Mango">Apple</option>
+        </select>
+    </form>
+    </center>
+
+</body>
+<script>
+    function SetV(V){
+        
+        with(document.forms.from1){
+
+            data = {
+                F:["Mango","Banana","Apple"],
+                V:[19,18,66],
+               
+            }
+
+            if(V == "Furite"){
+                opL[0].value = data.F[0]
+                opL[0].text = data.F[0]
+                opL[1].value = data.F[1]
+                opL[1].text = data.F[1]
+                opL[2].value = data.F[2]
+                opL[2].text = data.F[2]
+            }
+
+            
+            if(V == "Vegatable"){
+                opL[0].value = data.V[0]
+                opL[0].text = data.V[1]
+                opL[1].value = data.V[1]
+                opL[1].text = data.V[1]
+                opL[2].value = data.V[2]
+                opL[2].text = data.V[2]
+            }
+            
+        }
+    }
+
+
+
+
+
+</script>
+</html>
