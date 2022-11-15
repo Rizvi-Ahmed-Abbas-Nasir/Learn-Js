@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rrogram</title>
+  </head>
+  <body>
+    <center>
+      <form name="myForm"> 
+        <h2>Rizvi Ahmed Abbas</h2>
+        <h3>2005690171</h3>
+        <input type="button" value="Get the Color" onclick="ChangeBG('PR11_2Colorbg.html')">
+      </form>
+    </center>
+  </body>
+  <script>
+
+    function ChangeBG(URL){
+
+        var bgcolor = prompt("Enter The Color for Background")
+
+        newCookie = document.cookie = "ColorName="+ bgcolor+";"
+
+        spc = newCookie.split("=")
+        alert(spc)
+
+        scc = spc[1].slice(0, -1)
+
+        alert(scc)
+
+        myWindow = window.open(URL,'windowOne', 'width=400, heigth=400')
+
+        myWindow.document.write("<body bgColor="+scc+ "></body>")
+        
+    }
+
+  </script>
+</html>

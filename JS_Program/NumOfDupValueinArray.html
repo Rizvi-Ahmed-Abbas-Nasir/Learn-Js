@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    function findDuplicateValue(array){
+
+      const obj = {};
+      const arr = [];
+      let count = 0;
+
+      array.forEach (item =>{
+        if(!obj[item])
+            obj[item] = 0;
+            obj[item] += 1;
+        
+    }) 
+        for(const prop in obj){
+            if(obj[prop] >= 2){
+                count++;
+                arr.push(prop);
+            }
+        }
+        
+        return count;
+      
+    } 
+
+    let dupValue = findDuplicateValue([2,3,6,7,6,5,5,2])
+
+    alert(dupValue)
+
+
+</script>
+</html>

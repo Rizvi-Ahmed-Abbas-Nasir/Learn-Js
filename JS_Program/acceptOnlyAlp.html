@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <label>Accept Only Alphabate</label>
+        <br>
+        <br>
+        <input type="text" id="t1">
+        <br>
+        <br>
+        <input type="button" value="Check" onclick="Javascript:alert(AccpetAlp())">
+        <br>
+       
+
+    </center>
+</body>
+<script>
+
+    function AccpetAlp(){
+        
+        let char = document.getElementById('t1').value 
+
+      
+
+        let v = "Invalid";
+        let iv = "Valid"
+
+        for(let i = 0; i < char.length; i++){
+            //alert(char.charCodeAt(i))
+            // if(char.charCodeAt(i) >= 65 && char.charCodeAt(i) <= 90 || char.charCodeAt(i) >= 97 &&  char.charCodeAt(i) <=122){
+            //   return v
+            //}
+            //else{
+              //  return iv
+            //}
+              if(char[i] >= 0 || char[i] <= 9){
+              return v
+            }
+            else{
+              return iv
+            }
+         }
+
+        
+    }
+
+
+
+</script>
+</html>
