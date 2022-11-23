@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizvi Ahmed Abbas</title>
+</head>
+<body>
+    <center>
+        <h2>Rizvi Ahmed Abbas</h2>
+        <h3>2005690171</h3>
+        <input type="text" id="t1">
+        <br>
+        <input type="button" value="Check" onclick="OnlyAlp()">
+    </center>
+</body>
+<script>
+
+    function OnlyAlp(){
+        let val  = document.getElementById('t1').value 
+
+        reg = /^0[0-9]{2,3}\-[0-9]{6,8}$/g
+
+        if(reg.test(val)){
+            alert("Valid")
+        }
+        else{
+            alert("Invalid")
+        }
+    }
+
+
+</script>
+</html>

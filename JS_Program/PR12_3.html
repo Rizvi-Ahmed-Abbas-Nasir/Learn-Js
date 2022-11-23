@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizvi Ahmed Abbas</title>
+</head>
+<body>
+    <form name="myForm">
+    <center>
+        <h2>Rizvi Ahmed Abbas</h2>
+        <h3>2005690171</h3>
+        Name <input type="text" id="t1" onchange="validateName()">
+        <br>
+        LandLine No <input type="text" id="t2" onchange="validateLandLineNo()">
+        <br>
+        Mobile No <input type="text" id="t3" onchange="validateMobileNo()">
+        <br>
+        Email-Id <input type="text" id="t4" onchange="validateEmail()">
+        <br>
+    </center>
+</form>
+</body>
+<script>
+
+    function validateName(){
+        let val  = document.getElementById('t1').value 
+
+        reg = /\d/g
+
+        if(reg.test(val)){
+            document.forms.myForm.t1.style.background = "red"     
+        }
+        else{
+            document.forms.myForm.t1.style.background = "Green" 
+        }    
+    }
+
+    function validateLandLineNo(){
+        let val  = document.getElementById('t2').value 
+
+        reg = /^0[0-9]{2,3}\-[0-9]{6,8}$/g
+
+        if(reg.test(val)){
+            document.forms.myForm.t2.style.background = "Green" 
+        }
+        else{
+            document.forms.myForm.t2.style.background = "red"     
+        }
+    }
+
+    function validateMobileNo(){
+        let val  = document.getElementById('t3').value 
+
+        reg = /^[6-9]{1}[0-9]{9}$/g
+
+        if(reg.test(val)){
+            document.forms.myForm.t3.style.background = "Green"
+        }
+        else{
+            document.forms.myForm.t3.style.background = "red"   
+        }
+    }
+    
+
+    function validateEmail(){
+        let val  = document.getElementById('t4').value 
+
+        reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g
+
+        if(reg.test(val)){
+            document.forms.myForm.t4.style.background = "Green"
+        }
+        else{
+            document.forms.myForm.t4.style.background = "red"   
+
+        }
+    }
+
+
+</script>
+</html>
