@@ -1,0 +1,48 @@
+body{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.menu{
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    background: rgb(39, 39, 39);
+    left: -250px;
+}
+
+.menu ul li a{
+    color: white;
+    
+}
+
+.menu a{
+    display: block;
+    padding: 5px;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu-icon{
+    padding: 10px 20px;
+    background-color: rgb(39, 39, 39);
+    float: left;
+    margin: 5px;
+    border-radius: 5px;
+    color: white    ;
+}
+
+#menuToggle{display: none;}
+
+#menuToggle:checked ~ .menu{
+    position:absolute;
+    left: 0px;
+}
+#menuToggle:checked ~ .menu-icon{
+    position:absolute;
+    left: 170px;
+}
+

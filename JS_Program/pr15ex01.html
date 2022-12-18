@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr15ex01</title>
+</head>
+<body>
+   <!-- title 15: Develop a webpage for implementing status bars and web page protection
+      -->
+      <center>
+<p>moving message on status bar</p>
+<h2>Rizvi Ahmed Abbas</h2>
+<h3>2005690171</h3>
+</center>
+      </body>
+<script>
+    msg = "My Name is Rizvi Ahmed Abbas";
+    n=0;
+    function msgmoving(){
+    window.status = msg.substr(0,n);
+    n++;
+    if(n>msg.length)
+    n=0; 
+
+    setTimeout("msgmoving()",150)
+    }
+    msgmoving()
+</script>
+</html>

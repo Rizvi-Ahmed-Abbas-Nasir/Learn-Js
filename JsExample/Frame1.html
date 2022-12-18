@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <br>
+        <form name="Form1">
+    <button onclick="ChangeLabel()">Click Here to change label for button in frame 2</button>
+    <input value=" " name="btn2" type="button" />
+</form>
+
+</center>
+</body>
+<script>
+    function ChangeLabel(){
+        document.forms.Form1.btn2.value = "Frame two"
+    }
+
+</script>
+</html>

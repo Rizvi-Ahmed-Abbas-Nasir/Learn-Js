@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr16ex02</title>
+</head>
+<body>
+    <center>
+        <h2>Rizvi Ahmed Abbas</h2>
+            <h3>2005690171</h3>
+        <p align="center">
+            
+        <img src="./html.png" name="pd" width="200" height="150" >
+        </p>
+        
+        </center>
+</body>
+<script>
+    picture = new Array("html.png","css.png","js.png");
+    cp=0;
+    function RunslidShow(forwardback){
+        if(document.images){
+            cp = cp + forwardback
+            if(cp > (picture.length - 1)){
+                cp = 0                       //farward
+            }
+            // if(cp<0){
+            //     cp = picture.length -1       //back
+            // }
+            setTimeout("RunslidShow(1)",1500)
+            document.pd.src=picture[cp]
+        }  
+    }
+    RunslidShow(1)
+</script>
+</html>

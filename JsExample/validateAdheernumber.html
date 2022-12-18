@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <form name="myForm">
+        UserName <input type="text" id="t1">
+        <br>
+        Adhaarcard <input type="text" id="t2"><br>
+        <input type="button" value="Check" onclick="Check()">
+        <br>
+        <label id="user"></label>
+        <label id="adhar"></label>
+    </form>
+    </center>
+    
+</body>
+<script>
+
+    function Check(){
+     let username = document.getElementById('t1').value 
+     let Adhaarcard = document.getElementById('t2').value 
+         
+
+     reg = /^[0-9]{4}[\.-]?[0-9]{4}[\.-]?[0-9]{4}$/
+
+     if(reg.test(Adhaarcard)){
+        alert("Valid")
+     }
+     else{
+        alert("Invalid")
+     }
+
+     document.getElementById('user').innerHTML = username+"<br>";
+     document.getElementById('adhar').innerHTML = Adhaarcard
+
+    }
+
+
+</script>
+</html>

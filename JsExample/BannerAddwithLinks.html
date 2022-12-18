@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="ShowBanner()"> 
+    <center>
+        <a href="javascript: ShowLinks()">
+            <img src="html.png" width="200" height="150" name="ChangeBanner">
+        </a>
+    </center>
+</body>
+<script>
+
+    MyBanner = new Array('html.png', 'css.png', 'js.png')
+    MyBannerLinks = new Array('learn-html.org', 'codecademy.com/learn/learn-css', 'learn-js.org')
+    banner = 0;
+    function ShowLinks(){
+        document.location.href = "http://www." + MyBannerLinks[banner]
+    }
+    function ShowBanner(){
+        if(document.images){
+            banner++
+            if(banner  == MyBanner.length){
+                banner = 0                       //farward
+            }
+            // if(cp<0){
+            //     cp = picture.length -1       //back
+            // }
+            setTimeout("ShowBanner(1)",1500)
+            document.ChangeBanner.src = MyBanner[banner]
+        }  
+    }
+</script>
+</html>
