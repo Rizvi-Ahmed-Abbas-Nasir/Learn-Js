@@ -27,9 +27,15 @@
                                        "expires=" + expires + ';'
         alert(cookie);
 
-        c = cookie.split("=")
+        c = cookie.split(";")
         alert(c[0])
+        nc = c[0].split("=")
+        alert(nc[0])
+        alert(nc[1])
         alert(c[1])
+        ec = c[1].split("=");
+        alert(ec[0])
+        alert(ec[1])
     }
 
 </script>
